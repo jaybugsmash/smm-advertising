@@ -146,8 +146,17 @@ section h2 {
 .social-media-services {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 /* Contact Section */
@@ -177,7 +186,7 @@ section h2 {
     }
 
     .service-item {
-        width: 100%;
+        width: 100%; /* Make the items take full width on small screens */
         margin-bottom: 20px;
     }
 
