@@ -247,24 +247,40 @@ section h2 {
     font-size: 1em;
 }
 
-/* Responsive Design */
+/* ======= Responsive Design ======= */
+
+/* Tablet Layout (768px and smaller) */
 @media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+
     .header h1 {
-        font-size: 3em;
+        font-size: 2.8em;
     }
 
     .header p {
         font-size: 1.1em;
     }
 
+    .cta-btn {
+        padding: 12px 30px;
+        font-size: 1.1em;
+    }
+
     section h2 {
-        font-size: 2em;
+        font-size: 2.2em;
+    }
+
+    .service-item, .social-media-card {
+        padding: 30px;
     }
 }
 
+/* Mobile Layout (480px and smaller) */
 @media (max-width: 480px) {
-    nav {
-        padding: 0 20px;
+    nav .logo {
+        font-size: 1.5em;
     }
 
     .header h1 {
@@ -275,7 +291,29 @@ section h2 {
         font-size: 1em;
     }
 
+    .cta-btn {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+
     section h2 {
         font-size: 1.8em;
+    }
+
+    .services, .social-media-grid {
+        grid-template-columns: 1fr; /* Stack the cards vertically */
+    }
+
+    .service-item, .social-media-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .social-media-card h3 {
+        font-size: 1.5em;
+    }
+
+    .social-media-card p {
+        font-size: 1.1em;
     }
 }
