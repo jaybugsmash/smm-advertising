@@ -143,20 +143,24 @@ section h2 {
     margin: 0 auto 40px;
 }
 
-.social-media-services {
-    display: flex;
-    justify-content: space-around;
+.social-media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
 }
 
-.service-item {
+.social-media-card {
     background-color: white;
     padding: 40px;
     border-radius: 10px;
-    width: 30%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+}
+
+.card-icon {
+    font-size: 3em;
+    color: #ff4b5c;
+    margin-bottom: 20px;
 }
 
 /* Contact Section */
@@ -180,7 +184,7 @@ section h2 {
 
 /* ======= Responsive Design ======= */
 @media (max-width: 768px) {
-    .services, .social-media-services {
+    .services {
         flex-direction: column;
         align-items: center;
     }
@@ -224,10 +228,6 @@ section h2 {
     .cta-btn {
         padding: 10px 20px;
         font-size: 0.9em;
-    }
-
-    .services, .social-media-services {
-        padding: 20px;
     }
 
     section h2 {
